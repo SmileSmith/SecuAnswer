@@ -52,6 +52,7 @@ $(function() {
     } else if (data.step == 1) {
       stepTow(data);
     } else if (data.step == 2) {
+      if (data.result === 9999) return;
       var totalProp = 0
       data.options = data.answers.map((answer, index) => {
         totalProp += answer.prop;
